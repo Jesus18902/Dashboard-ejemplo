@@ -1,0 +1,672 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: #f5f7f7;
+  color: var(--light);
+  display: flex;
+  margin: 0;
+}
+
+/* SIDEBAR */
+.sidebar {
+  /* background-color: yellow; */
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 250px;
+  /* min-height: 100vh; */
+  position: relative;
+  box-shadow: 6px 8px 24px rgba(20, 30, 30, 0.25);
+  color: white;
+}
+
+
+/* PERFIL */
+.perfil {
+
+  font-weight: bold;
+  position: relative;
+  left: 0px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin: 0;
+
+  text-align: center;
+  padding-bottom: 48px;
+  padding-top: 48px;
+  background-color: #3C5654;
+  width: 250px;
+}
+
+.avatar-wrap {
+  position: relative;
+  width: 92px;
+  height: 92px;
+  margin: 0 auto 12px;
+}
+
+.avatar {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  display: block;
+  object-fit: cover;
+  border: 6px solid rgba(0, 0, 0, 0.25);
+}
+
+.aro {
+  position: absolute;
+  inset: 0;
+  width: 92px;
+  height: 92px;
+  transform: translate(-6px, -6px);
+  pointer-events: none;
+}
+
+.main {
+  background-color: #E2ECEB;
+  width: 1000px;
+  height: 1000px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+
+.t-white {
+  color: white;
+}
+
+.contenedor1 {
+  display: flex;
+  position: relative;
+  left: 200px;
+  top: 100px;
+  /* background-color: yellow; */
+  width: 1300px;
+  height: 1000px;
+  justify-content: center;
+}
+
+.cont1 {
+  background-color: #C89C32;
+}
+
+.cont2,
+.cont3 {
+  background-color: #435A56;
+}
+
+.first {
+  position: relative;
+  width: 250px;
+  height: 100px;
+  background-color: kaqua;
+  margin: 40px;
+  border-radius: 20px;
+
+}
+
+.av {
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  bottom: -20px;
+  right: -10px;
+}
+
+.pl {
+  width: 170px;
+  height: 140px;
+  position: absolute;
+  top: -30px;
+  right: -10px;
+}
+
+.mini {
+  margin-left: 10px;
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+.precio2 {
+  margin: 10px;
+
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.titulo-grafico {
+  margin-top: 20px;
+  margin-left: 15px;
+  font-size: 16px;
+  color: #4A605B;
+  text-align: left;
+
+}
+
+.ef {
+  margin-left: 30px;
+}
+
+.mid {
+  position: absolute;
+  top: 150px;
+  left: 80px;
+}
+
+.cont6 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 350px;
+  margin: 20px;
+  background-color: rgb(255, 255, 255);
+
+}
+
+.ti1 {
+  font-size: 10px;
+  width: 50px;
+  height: 30px;
+  position: absolute;
+  left: 45px;
+  top: 20px;
+  color: #374442;
+  /* background-color: #243; */
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+
+}
+
+.ti2 {
+  position: absolute;
+  top: 30px;
+  left: 165px;
+  color: #374442;
+
+}
+
+.ti3 {
+  width: 30px;
+  height: 30px;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 30px;
+  border-radius: 50%;
+  background-color: #C99933;
+  position: absolute;
+  top: 30px;
+  left: 280px;
+}
+
+.ti4 {
+  font-weight: bold;
+  position: absolute;
+  color: #697775;
+  top: 30px;
+  left: 400px;
+}
+
+.tittle {
+  font-weight: bold;
+  padding-top: 30px;
+  padding-left: 20px;
+
+  font-size: 20px;
+
+}
+
+.perfil2 {
+  position: absolute;
+  left: 5px;
+  top: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+.second {
+  padding-left: 20px;
+
+  padding-top: 10px;
+  font-weight: 400;
+  margin-bottom: 60px;
+  font-size: 17px;
+
+}
+
+.equal {
+  color: #394441;
+  font-weight: bold;
+  margin-left: 40px;
+  font-size: 15px;
+}
+
+.format {
+  margin-left: 10px;
+
+  color: #394441;
+
+}
+
+.ticket1 {
+  height: 180px;
+  width: 550px;
+  background-color: #243;
+  background:
+    radial-gradient(circle at bottom left, transparent 20px, rgb(255, 255, 255) 0) bottom left,
+    radial-gradient(circle at bottom right, transparent 20px, rgb(255, 255, 255) 0) bottom right;
+  background-size: 50% 100%;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+
+  position: relative;
+
+
+}
+
+.ticket1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 18px;
+  right: 18px;
+  border-bottom: 1px dashed #333;
+}
+
+.ticket2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 18px;
+  right: 18px;
+  border-bottom: 1px dashed #333;
+}
+
+.ticket2 {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+
+  height: 100px;
+  width: 550px;
+  background:
+    radial-gradient(circle at top left, transparent 20px, rgb(255, 255, 255) 0) top left,
+    radial-gradient(circle at top right, transparent 20px, rgb(255, 255, 255) 0) top right,
+    radial-gradient(circle at bottom left, transparent 20px, rgb(255, 255, 255) 0) bottom left,
+    radial-gradient(circle at bottom right, transparent 20px, rgb(255, 255, 255) 0) bottom right;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+
+
+
+}
+
+.small {
+  position: absolute;
+  left: 70px;
+  padding-top: 50px;
+}
+
+.dos {
+  position: absolute;
+  top: 100px;
+  left: 30px;
+
+}
+
+.footer-sidebar {
+  display: flex;
+
+  color: yellow;
+  font-size: 12px;
+  position: relative;
+  top: 0px;
+  padding-left: 6px;
+  background-color: #425C5A;
+  width: 250px;
+  height: 600px;
+}
+
+.fondo1 {
+  width: 400px;
+  height: 400px;
+  left: -100px;
+  top: -100px;
+  position: fixed;
+}
+
+.fondo2 {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+
+}
+
+.ticket3 {
+  position: relative;
+  height: 100px;
+  width: 550px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+
+
+  background:
+    radial-gradient(circle at top left, transparent 20px, rgb(255, 255, 255) 0) top left,
+    radial-gradient(circle at top right, transparent 20px, rgb(255, 255, 255) 0) top right;
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+
+}
+
+.cont7 {
+  margin: 20px;
+  width: 550px;
+  height: 350px;
+  background-color: rgb(255, 255, 255);
+
+}
+
+.conv {
+  width: 100px;
+}
+
+.cont4 {
+  box-sizing: border-box;
+  padding: 0;
+  width: 550px;
+  height: 380px;
+  /* margin-left: 40px; */
+  /* background-color: red; */
+
+}
+
+.convert {
+  /* background-color: greenyellow; */
+  position: absolute;
+  top: 20px;
+  width: 250px;
+  left: 20px;
+  height: 300px;
+}
+
+.cont5 {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin-left: 40px;
+  background-color: #ffffff;
+  display: block;
+  /* optional: padding: 12px; box-sizing: border-box; */
+}
+
+/* Asegurar que el canvas ocupe todo el contenedor */
+
+
+.nombre {
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin: 6px 0 2px;
+  color: var(--light);
+}
+
+.email {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* NAVEGACIÓN */
+.navegacion {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 8px;
+  background-color: #425C5A;
+  width: 250px;
+}
+
+.primero {
+  position: relative;
+  left: 30px;
+}
+
+/* ITEM COMÚN */
+.menu-item {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 12px;
+  border-radius: 12px;
+  color: var(--light);
+  text-decoration: none;
+  position: relative;
+  transition: all .22s ease;
+  overflow: visible;
+  padding-top: 30px;
+  font-family: sans-serif;
+  padding-bottom: 10px;
+}
+
+/* icono */
+.menu-item .icon {
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-item svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--muted);
+}
+
+/* texto */
+.menu-item .texto {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  color: var(--light);
+  display: inline-block;
+  /* útil para transiciones */
+  width: 100%;
+}
+
+
+/* Hover base (si quieres hover nativo además del script) */
+.menu-item:hover {
+  transform: translateX(4px);
+  background-color: #DEE8E7;
+  border-radius: 30px;
+
+  span {
+    color: #425C5A;
+  }
+}
+
+/* ESTADO ACTIVO: pastilla blanca que sobresale (mantengo tu diseño) */
+.menu-item.active {
+  background: transparent;
+  color: #223;
+  z-index: 2;
+}
+
+.menu-item.active svg {
+  fill: var(--accent);
+}
+
+.menu-item.active .texto {
+  color: #223;
+}
+
+/* (opcionales) si quieres usar la pastilla física a la izquierda, habilita estos:
+.menu-item.active::before { ... }
+.menu-item.active::after { ... }
+*/
+
+/* PIE del sidebar */
+
+
+/* CONTENIDO PRINCIPAL */
+.contenido {
+  flex: 1;
+  padding: 36px;
+  color: #243;
+  background: linear-gradient(180deg, #f7f9f9, #eef2f2);
+  min-height: 100vh;
+}
+
+/* RESPONSIVE pequeño */
+@media (max-width:600px) {
+  .sidebar {
+    width: 78px;
+    padding: 18px;
+  }
+
+  .nombre,
+  .email,
+  .texto {
+    display: none;
+  }
+
+  .menu-item {
+    justify-content: center;
+  }
+
+  /* Ajusta la pastilla activa si la usas */
+
+}
+
+/* ===== Bloque del efecto hover + adyacentes (unificado) ===== */
+
+/* Normalizamos a nivel de .menu-item (ya definido arriba) para que el fondo abarque icon+texto */
+.menu-item {
+  /* Reaplico transición específica para fondo/transform */
+  transition: background .25s ease, transform .18s ease, color .18s ease;
+  background: transparent;
+  /* por defecto */
+  color: var(--light);
+}
+
+/* Cuando el script marca el item central (hover real) */
+.menu-item.hovered {
+  background: var(--hover-bg);
+  /* color central distinto */
+  color: var(--accent);
+  /* texto dorado si quieres */
+  font-weight: 600;
+  transform: translateX(6px);
+  border-radius: var(--radius);
+  z-index: 3;
+}
+
+/* Adyacentes (arriba/abajo): mantiene su color original, pero pueden recibir transform/sombra — NO cambian color */
+.menu-item.adj {
+  background: transparent;
+  /* NO cambiamos color, lo dejamos como estaba */
+  color: var(--light);
+  /* conserva color original */
+  box-shadow: none;
+  /* opcional: quita sombra para que no parezcan iguales */
+  z-index: 2;
+  transition: transform .18s ease, opacity .18s ease;
+}
+
+/* Si quieres que los adyacentes solo se muevan ligeramente (sin cambiar color) */
+.menu-item.adj.prev {
+  transform: translateY(-2px);
+  opacity: 0.95;
+  border-bottom-right-radius: var(--radius);
+  /* deja la esquina redondeada visual */
+  border-top-right-radius: 0;
+  /* aseguramos otras esquinas en 0 */
+}
+
+.menu-item.adj.next {
+  transform: translateY(2px);
+  opacity: 0.95;
+  border-top-right-radius: var(--radius);
+  border-bottom-right-radius: 0;
+}
+
+/* Transiciones suaves en texto/fondo */
+.menu-item,
+.menu-item .texto {
+  transition: color .18s ease, background .18s ease, border-radius .18s ease, transform .18s ease;
+}
+
+/* Si hay reglas previas que te sobrescriben, coloca este bloque AL FINAL del archivo para que tenga prioridad. */
+/* === FORZAR SIDEBAR ESTABLE (pegar AL FINAL del CSS) === */
+
+/* 1) Forzar ancho fijo y evitar que flex lo reduzca al hacer zoom */
+.sidebar {
+  width: 250px !important;
+  min-width: 250px !important;
+  max-width: 250px !important;
+  flex: 0 0 250px !important;
+  /* evita que el flex lo encoja */
+  box-sizing: border-box !important;
+}
+
+/* 2) Asegurar que la navegación no oculte textos por media queries */
+.navegacion .texto,
+.nombre,
+.email {
+  display: inline-block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* 3) Evitar que reglas @media posteriores cambien el layout */
+@media (max-width: 900px) {
+
+  .sidebar,
+  .navegacion,
+  .menu-item,
+  .menu-item .texto,
+  .nombre,
+  .email {
+    width: 250px !important;
+    min-width: 250px !important;
+    display: inline-block !important;
+  }
+
+  .menu-item {
+    justify-content: flex-start !important;
+    padding: 12px 12px !important;
+  }
+}
+
+/* 4) No permitir que el contenedor principal se refluya sobre la sidebar */
+.contenedor1 {
+  margin-left: 0 !important;
+  /* si tenías offsets que dependen del ancho */
+}
+
+/* 5) Opcional: mantener la sidebar fija y siempre visible (no se mueva) */
+.sidebar {
+  position: relative !important;
+  /* o fixed si prefieres que se quede fija en la pantalla:
+                                  position: fixed; left: 0; top: 0; height: 100vh; */
+}
+
+/* Nota: estos !important sólo están aquí para sobreescribir reglas problemáticas;
+   si prefieres, puedo limpiar el CSS después para quitar los !important. */

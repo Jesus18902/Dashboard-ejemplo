@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="slidebar.css">
+  </head>
+
+  <body>
+    <img src="assets/wave-haikei.svg" class="fondo2" alt="">
+    <svg class="fondo1" width="169px" height="169px" viewBox="-7.11 -7.11 85.33 85.33"
+      xmlns="http://www.w3.org/2000/svg" fill="#d7a217" stroke="#d7a217" stroke-width="0.07110999999999999">
+      <g id="SVGRepo_bgCarrier" stroke-width="0">
+        <rect x="-7.11" y="-7.11" width="85.33" height="85.33" rx="42.665" fill="#D7A217" strokewidth="0"></rect>
+      </g>
+      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+      <g id="SVGRepo_iconCarrier">
+        <g id="Group_36" data-name="Group 36" transform="translate(-82.218 -919.107)">
+          <path id="Path_16" data-name="Path 16"
+            d="M117.773,990.216a35.555,35.555,0,1,1,35.555-35.554A35.6,35.6,0,0,1,117.773,990.216Zm0-68.109a32.555,32.555,0,1,0,32.555,32.555A32.592,32.592,0,0,0,117.773,922.107Z"
+            fill="#D7A217"></path>
+        </g>
+      </g>
+    </svg>
+    <div class="contenedor1">
+      <aside class="sidebar">
+        <div class="perfil">
+          <div class="avatar-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&s=abcd"
+              alt="Avatar" class="avatar">
+            <!-- aro decorativo -->
+            <svg class="aro" viewBox="0 0 100 100" aria-hidden="true">
+              <circle cx="50" cy="50" r="40" fill="none" stroke="rgba(212,170,60,0.9)" stroke-width="6" />
+            </svg>
+          </div>
+          <h2 class="nombre">ALEX JOHNSON</h3>
+            <p class="email">alex.johnson@gmail.com</p>
+        </div>
+
+        <nav class="navegacion" aria-label="Menú principal">
+          <div class="primero">
+            <a href="#" class="menu-item">
+              <span class="icon" aria-hidden="true">
+                <!-- home -->
+                <svg viewBox="0 0 24 24">
+                  <path d="M3 11.5L12 4l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V11.5z" />
+                </svg>
+              </span>
+              <span class="texto item">DASHBOARD</span>
+            </a>
+          </div>
+
+          <a href="#" class=" primero menu-item">
+            <span class="icon" aria-hidden="true">
+              <!-- plane -->
+              <svg viewBox="0 0 24 24">
+                <path d="M2 12l20-8-7 8 7 8L2 12z" />
+              </svg>
+            </span>
+            <span class="texto item">FLIGHTS</span>
+          </a>
+
+          <a href="#" class="primero menu-item">
+            <span class="icon" aria-hidden="true">
+              <!-- wallet -->
+              <svg viewBox="0 0 24 24">
+                <path d="M2 7h18v10H2z" />
+              </svg>
+            </span>
+            <span class="texto item">WALLET</span>
+          </a>
+
+          <a href="#" class="primero menu-item">
+            <span class="icon" aria-hidden="true">
+              <!-- reports (document) -->
+              <svg viewBox="0 0 24 24">
+                <path d="M6 2h9l5 5v13a1 1 0 0 1-1 1H6z" />
+              </svg>
+            </span>
+            <span class="texto item">REPORTS</span>
+          </a>
+
+          <a href="#" class="primero menu-item">
+            <span class="icon" aria-hidden="true">
+              <!-- stats -->
+              <svg viewBox="0 0 24 24">
+                <path d="M4 20h3V10H4v10zm6 0h3V4h-3v16zm6 0h3v-6h-3v6z" />
+              </svg>
+            </span>
+            <span class="texto item">STATISTICS</span>
+          </a>
+
+          <a href="#" class="primero menu-item">
+            <span class="icon" aria-hidden="true">
+              <!-- settings -->
+              <svg viewBox="0 0 24 24">
+                <path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8z" />
+              </svg>
+            </span>
+            <span class="texto item">SETTINGS</span>
+          </a>
+        </nav>
+
+        <div class="footer-sidebar">
+          <span class="small">ACTIVE USERS</span>
+          <img src="assets/planisferio.png" class="pl dos" alt="">
+        </div>
+      </aside>
+      <div class="main">
+        <div class="cont1 first">
+          <h3 class="mini t-white">Boeing 787</h3>
+          <p class="precio2 t-white">$548</p>
+          <img src="assets/avion.png" alt="" class="av">
+        </div>
+        <div class="cont2 first">
+          <h3 class="mini t-white">Airbus 811 </h3>
+          <p class="precio2 t-white">$620</p>
+          <img src="assets/avion.png" alt="" class="av">
+        </div>
+        <div class="cont3 first">
+          <h3 class="mini t-white">Total Flights</h3>
+          <p class="precio2 t-white">850</p>
+          <img src="assets/planisferio.png" alt="" class="pl">
+        </div>
+        <div class="cont4">
+          <div class="ticket1">
+            <h2 class="format tittle">Last Trip</h2>
+            <h3 class="second format">Overview of lastest month</h3>
+            <span class="equal format1">Members</span>
+            <span class="equal format2">Flight</span>
+            <span class="equal format3">Total Members</span>
+            <span class="equal format4">Ticket Price</span>
+          </div>
+          <div class="ticket2">
+            <img src="assets/perfil.png" alt="" class="perfil2">
+            <span class="ti1">
+              <pre>John Doe
+
+john@gmail.com
+            </pre>
+            </span>
+            <span class="ti2">Qatar</span>
+            <span class="ti3">5</span>
+            <span class="ti4">$56k</span>
+
+          </div>
+          <div class="ticket3"> <img src="assets/perfil.png" alt="" class="perfil2">
+            <span class="ti1">
+              <pre>John Doe
+
+john@gmail.com
+            </pre>
+            </span>
+            <span class="ti2">Emirates</span>
+            <span class="ti3">2</span>
+            <span class="ti4">$56k</span>
+          </div>
+        </div>
+        <div class="cont5">
+          <div class="convert">
+            <h2 class="titulo-grafico"> <b>Statistics</b></h2>
+
+            <canvas id="barChart"></canvas>
+
+          </div>
+
+        </div>
+        <div class="cont6">
+          <h2 class="titulo-grafico">Flights Share</h2>
+          <p class="titulo-grafico mid">Flights Share</p>
+          <canvas id="pieChart"></canvas>
+        </div>
+        <div class="cont7">
+          <h2 class="titulo-grafico">Flights Schedule</h2>
+
+          <canvas id="myChart" class="conv"></canvas>
+        </div>
+      </div>
+
+    </div>
+
+    <script>
+      // obtener contextos 2D correctamente
+      const ctx = document.getElementById('myChart').getContext('2d');
+      const ctx2 = document.getElementById('pieChart').getContext('2d');
+      const ctx3 = document.getElementById('barChart').getContext('2d');
+
+      const gradient2024 = ctx.createLinearGradient(0, 0, 0, 300);
+      gradient2024.addColorStop(0, 'rgba(214,200,47,0.6)');
+      gradient2024.addColorStop(1, 'rgba(214,200,47,0)');
+
+      const gradient2025 = ctx.createLinearGradient(0, 0, 0, 300);
+      gradient2025.addColorStop(0, 'rgba(12,114,142,0.6)');
+      gradient2025.addColorStop(1, 'rgba(12,114,142,0)');
+
+      // --- Gráfico de líneas ---
+      new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun'],
+          datasets: [
+            {
+
+              data: [3, 4, 3, 7, 3.5, 4.8, 10],
+              borderColor: 'rgb(197, 155, 46)',
+              backgroundColor: gradient2024,
+              tension: 0.4,
+              borderWidth: 2,
+              pointRadius: 0,
+              fill: true
+            },
+            {
+
+              data: [3, 2, 5, 1, 5, 4.8],
+              borderColor: 'rgb(66, 92, 90)',
+              backgroundColor: gradient2025,
+              tension: 0.4,
+              borderWidth: 2,
+              pointRadius: 0,
+              fill: true
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              display: false,
+              position: 'top',
+              labels: {
+                color: '#444', // color del texto de la leyenda
+                font: { size: 14 }
+              }
+            },
+
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              grid: { display: false },
+              ticks: { color: '#444' }
+            },
+            x: {
+              grid: { display: false },
+              ticks: { color: '#444' }
+            }
+          }
+        }
+      });
+
+      // --- DOUGHNUT (pieChart) ---
+      new Chart(ctx2, {
+        type: 'doughnut',
+        data: {
+
+          datasets: [{
+
+            data: [2, 2, 2, 4],
+            backgroundColor: [
+              'rgb(213, 175, 20)',
+              'rgb(25, 179, 168)',
+              'rgb(24, 144, 178)',
+              'rgb(66, 91, 89)'
+
+            ],
+            borderWidth: 1,
+
+            offset: [40, 0, 0, 0]
+          }]
+        },
+        options: {
+          responsive: true,
+          cutout: '70%',
+          plugins: {
+            legend: { position: 'right' }
+
+          }
+        }
+      });
+      // --- BARRAS DELGADAS (barChart) con degradado vertical ---
+      // Creamos el gradiente usando la altura actual del canvas
+      function createBarGradient(ctx) {
+        const { width, height } = ctx.canvas;
+        // si el height es 0 (canvas no inicializado aún), asumimos un valor por defecto
+        const h = height || 300;
+        const g = ctx.createLinearGradient(0, 0, 0, h);
+        g.addColorStop(0, 'rgba(193, 156, 71, 3)');           // color superior
+        g.addColorStop(1, 'rgb(68, 90, 88)');    // color inferior
+        return g;
+      }
+
+      // crea el gradiente inicial
+      let gradientBar = createBarGradient(ctx3);
+
+      const barChart = new Chart(ctx3, {
+        type: 'bar',
+        data: {
+          labels: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun'],
+          datasets: [{
+            label: 'Ventas 2024',
+            data: [3, 4, 3, 7, 3.5, 4.8],
+            backgroundColor: gradientBar,   // aplicamos el degradado
+            borderColor: 'rgba(0,0,0,0)',
+            borderWidth: 0,
+            barThickness: 6,   // barra muy delgada (tipo línea)
+            borderRadius: 3
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false, // permite que Chart.js use la altura real del contenedor
+          plugins: {
+            legend: { display: false },
+            title: {
+              display: true,
+              color: '#222',
+              font: { size: 16 }
+            }
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              grid: { display: false },
+              ticks: { display: false }
+            },
+            x: {
+              grid: { display: false },
+              ticks: { color: '#555', font: { size: 12 } }
+            }
+          }
+        }
+      });
+
+      // Recalcular degradado al redimensionar para que siempre cubra la altura real del canvas
+      window.addEventListener('resize', () => {
+        // espera un ciclo para que canvas tenga las nuevas dimensiones
+        requestAnimationFrame(() => {
+          gradientBar = createBarGradient(ctx3);
+          barChart.data.datasets[0].backgroundColor = gradientBar;
+          barChart.update();
+        });
+      });
+
+
+
+
+
+    </script>
+
+
+  </body>
+
+</html>
